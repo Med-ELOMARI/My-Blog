@@ -79,13 +79,15 @@ dataset_helper_instance = DatasetHelper(
     interaction_column=ratings_column,
     clean_unknown_interactions=True,
 )
+```
 
-# run the routine
-# you can alslo run the steps separately one by one | routine function is simplifying the flow
+run the routine ,you can alslo run the steps separately one by one | routine function is simplifying the flow
+
+```
 dataset_helper_instance.routine()
 ```
 
-feeding the dataset to the LightFM class
+after runing the routine we can feed the dataset to the LightFM class
 ```python
 from lightfm import LightFM
 
